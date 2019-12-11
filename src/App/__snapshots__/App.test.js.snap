@@ -21,3 +21,113 @@ exports[`App should match the snapshot 1`] = `
   />
 </div>
 `;
+
+exports[`App should match the snapshot 2`] = `
+<div
+  className="App"
+>
+  <h1
+    className="app-title"
+  >
+    Turing Cafe Reservations
+  </h1>
+  <div
+    className="resy-form"
+  >
+    <ReservationForm
+      addReservation={[Function]}
+    />
+  </div>
+  <div
+    className="resy-container"
+  />
+</div>
+`;
+
+exports[`App should update the state 1`] = `
+<div
+  className="App"
+>
+  <h1
+    className="app-title"
+  >
+    Turing Cafe Reservations
+  </h1>
+  <div
+    className="resy-form"
+  >
+    <ReservationForm
+      addReservation={[Function]}
+    />
+  </div>
+  <div
+    className="resy-container"
+  />
+</div>
+`;
+
+exports[`App should update the state with a new reservation 1`] = `
+<div
+  className="App"
+>
+  <h1
+    className="app-title"
+  >
+    Turing Cafe Reservations
+  </h1>
+  <div
+    className="resy-form"
+  >
+    <ReservationForm
+      addReservation={[Function]}
+    />
+  </div>
+  <div
+    className="resy-container"
+  />
+</div>
+`;
+
+exports[`App should update the state with a new reservation when addReservation is called 1`] = `
+<div
+  className="App"
+>
+  <h1
+    className="app-title"
+  >
+    Turing Cafe Reservations
+  </h1>
+  <div
+    className="resy-form"
+  >
+    <ReservationForm
+      addReservation={[Function]}
+    />
+  </div>
+  <div
+    className="resy-container"
+  />
+</div>
+`;
+
+exports[`App should update the state with a newR 1`] = `
+<div
+  className="App"
+>
+  <h1
+    className="app-title"
+  >
+    Turing Cafe Reservations
+  </h1>
+  <div
+    className="resy-form"
+  >
+    <ReservationForm
+      addReservation={[Function]}
+    />
+  </div>
+  <div
+    className="resy-container"
+  />
+</div>
+`;
