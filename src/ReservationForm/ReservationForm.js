@@ -23,6 +23,7 @@ class ReservationForm extends Component{
             id: Date.now(),
             name: this.state.name,
             date: this.state.date,
+            time: '7:00',
             number: this.state.number
         }
         console.log(newRes)
@@ -43,14 +44,16 @@ class ReservationForm extends Component{
           type='number'
           placeholder='RoomNumber'
                 name='number'
-                // min="1" max="15"
                 value={this.state.number}
                 onChange ={event => this.handleChange(event)}
         />
-             <input type="date" name ='date'min="01-01-2019" max="12-31-2019"  value={this.state.date}
+            <input
+                type="date"
+                name='date'
+                min="01-01-2019" max="12-31-2019"
+                value={this.state.date}
             onChange ={event => this.handleChange(event)}></input> 
-
-        <button onClick={this.submitReservation}>SUBMIT</button>
+        <button onClick={this.submitReservation}>Make Reservation</button>
       </form>
     )
   }

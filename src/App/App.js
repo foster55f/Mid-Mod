@@ -19,14 +19,16 @@ class App extends Component {
   }
 
   addReservation = (newReservation) => {
+    console.log(newReservation)
     this.setState({ data: [...this.state.data, newReservation] });
+    console.log(this.state.data)
   }
 
   render() {
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
-        {/* {this.state.data && (<ReservationContainer reservations={this.state.data} />)} */}
+        {this.state.data && (<ReservationContainer reservations={this.state.data} />)}
         <div className='resy-form'>
           <ReservationForm addReservation={this.addReservation}/>
         </div>
