@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ReservationContainer from '../ReservationContainer/ReservationContainer';
+import ReservationForm from '../ReservationForm/ReservationForm';
 
 class App extends Component {
   constructor() {
@@ -21,8 +22,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
-        {this.state.data && (<ReservationContainer reservations={this.state.data} />)}
+        {/* {this.state.data && (<ReservationContainer reservations={this.state.data} />)} */}
         <div className='resy-form'>
+          <ReservationForm/>
         </div>
         <div className='resy-container'>      
         </div>
