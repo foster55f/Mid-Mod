@@ -17,6 +17,18 @@ class ReservationForm extends Component{
         this.setState({ [event.target.name]: event.target.value });
     }
 
+    submitReservation = (event) => {
+        event.preventDefault();
+        const newRes = {
+            id: Date.now(),
+            name: this.state.name,
+            date: this.state.date,
+            number: this.state.number
+        }
+        console.log(newRes)
+        this.props.addReservation(newRes)
+    }
+
     render() {
     return (
       <form>
@@ -28,15 +40,17 @@ class ReservationForm extends Component{
             onChange ={event => this.handleChange(event)}
         />
         <input
-          type='text'
-          placeholder='Date'
-          name='description'
-          value={this.state.date}
+          type='number'
+          placeholder='RoomNumber'
+                name='number'
+                // min="1" max="15"
+                value={this.state.number}
+                onChange ={event => this.handleChange(event)}
         />
-            <input type="date" min="01-01" max="12-31"  value={this.state.date}
-            onChange ={event => this.handleChange(event)}></input>
+             <input type="date" name ='date'min="01-01-2019" max="12-31-2019"  value={this.state.date}
+            onChange ={event => this.handleChange(event)}></input> 
 
-        <button>SUBMIT</button>
+        <button onClick={this.submitReservation}>SUBMIT</button>
       </form>
     )
   }
