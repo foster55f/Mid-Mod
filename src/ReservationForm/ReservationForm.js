@@ -29,10 +29,12 @@ class ReservationForm extends Component{
         />
         <input
           type='text'
-          placeholder='Description'
+          placeholder='Date'
           name='description'
           value={this.state.date}
         />
+            <input type="date" min="01-01" max="12-31"  value={this.state.date}
+            onChange ={event => this.handleChange(event)}></input>
 
         <button>SUBMIT</button>
       </form>
