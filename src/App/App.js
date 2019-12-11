@@ -45,10 +45,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
-        {this.state.data && (<ReservationContainer reservations={this.state.data} />)}
         <div className='resy-form'>
           <ReservationForm addReservation={this.addReservation}/>
         </div>
+        {this.state.data && (<ReservationContainer reservations={this.state.data} />)}
         <div className='resy-container'>      
         </div>
       </div>
