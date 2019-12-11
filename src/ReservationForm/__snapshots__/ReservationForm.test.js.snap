@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReservationForm should match the snapshot 1`] = `
+<form>
+  <input
+    name="name"
+    onChange={[Function]}
+    placeholder="Name"
+    type="text"
+    value=""
+  />
+  <input
+    name="number"
+    onChange={[Function]}
+    placeholder="RoomNumber"
+    type="number"
+    value=""
+  />
+  <input
+    max="12-31-2019"
+    min="01-01-2019"
+    name="date"
+    onChange={[Function]}
+    type="date"
+    value=""
+  />
+  <button
+    onClick={[Function]}
+  >
+    Make Reservation
+  </button>
+</form>
+`;
