@@ -5,11 +5,11 @@ import './ReservationCard.css';
 const ReservationCard = ({id,name,date,time,number}) => {
     return (
         <div className='card'>
-            <h1>{id}</h1>
-            <h1>{name}</h1>
-            <h1>{date}</h1>
-            <h1>{time}</h1>
-            <h1>{number}</h1>
+            <h1>Id:{id}</h1>
+            <h1>Name:{name}</h1>
+            <h1>Date: {date}</h1>
+            <h1>Time: {time}</h1>
+            <h1>RoomNumber:{number}</h1>
         </div>
     )
 }
