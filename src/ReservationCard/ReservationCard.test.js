@@ -9,4 +9,5 @@ describe('ReservationCard', () => {
   
       expect(wrapper.contains(name)).toEqual(true);
     });
-  });
+});
+  
